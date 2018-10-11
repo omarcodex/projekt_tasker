@@ -34,7 +34,7 @@ end
 
 # Summarizing
 sums.each do |time|
-    total_time += time/60
+    total_time += time/(60*60)
 end
     total_valu = total_time * rate.to_i
     puts "Total time @ rate: #{total_time.round(2)} * #{rate}.....Total due: #{total_valu}"
